@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog DevStart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <header>
+                <nav id="barra-navegacao">
+                    <a href="#home">Inicio</a>
+                    <a href="#meu-blog">Meu Blog</a>
+                    <a href="#novo-post">Novo Post</a>
+                    <a href="#ultimas-postagens">Ultimas Postagens</a>
+                </nav>
+            </header>
+            <div class="conteudo-meio">
+                <aside>
+                    <div id="meu-blog">
+                        <h2>Meu Blog</h2>
+                        <p>
+                            Um espaço para compartilhar ideias, experiências e pensamentos. Aqui você pode criar seus
+                            próprios posts de forma simples e rápida, simulando o funcionamento de uma rede social.
+                        </p>
+                    </div>
+                </aside>
+                <div class="sessoes-laterais">
+                    <section id="novo-post">
+                        <h2>Criar novo post</h2>
+                        <p>
+                            Preencha os campos abaixo para criar uma nova publicação. Informe um título e escreva o
+                            conteúdo que deseja compartilhar.
+                        </p>
+                        <div class="formulario">
+                            <form>
+                                <label for="titulo">Titulo:</label>
+                                <input type="text" id="titulo" required />
+                                <br>
+                                <label for="mensagemPut">Mensagem:</label>
+                                <textarea id="mensagemPut" placeholder="Digite sua mensagem..." required></textarea>
+                                <br>
+                                <button type="submit">Enviar</button>
+                            </form>
+                        </div>
+                    </section>
+                    <section id="ultimas-postagens">
+                        <h2>Últimas postagens</h2>
+                        <p>Confira abaixo o conteúdo das publicações.</p>
+                        <ul id="postagens"></ul>
+                    </section>
+                </div>
+            </div>
+            <footer>
+                <h2>Blog DevStart</h2>
+                <p>© 2026 Blog DevStart - Todos os direitos reservados | author: Agenor S. Rodrigues - SSA/BA</p>
+            </footer>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
